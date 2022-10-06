@@ -12,7 +12,21 @@ body {
     background: linear-gradient(#EDD83D,#EAF5CC)
 }
 
+.navbar{
+    background-color: #7DC05D;
+    color: #04003D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+.navbar h3 span{
+    color: #ECD632;
+    font-size: 150%;
+}
+
 .header{
+    color: black;
     font: Tahoma;
     font-size: 150%;
     margin: 1px;
@@ -32,23 +46,25 @@ body {
     cursor: pointer;
 }
 
-.socialmedia ul li{
+.navbar ul li{
+    color: #04003D;
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
     position: static;
 }
 
-.socialmedia ul li a{
-    color: black;
+.navbar ul li a{
+    color: #04003D;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.socialmedia ul li a:hover{
-    background-color: #6AB547;
-    color: #EAF5CC;
+.navbar ul li a:hover{
+    transform: scale(1.2);
+    background-color: #EFDE57;
+    color: black;
     transition: .4s;
     border: 2px solid transparent;
     font-weight: bold;
@@ -90,7 +106,7 @@ h6{
 }
 
 .under_image i{
-    font-size: 200%;
+    font-size: 250%;
 }
 
 .about{
