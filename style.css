@@ -14,6 +14,7 @@ body {
 
 .header{
     font: Tahoma;
+    font-size: 150%;
     margin: 1px;
     width: 100%;
     padding: 30px 100px;
@@ -21,16 +22,13 @@ body {
     position: static;
 }
 .header:hover{
-    font-size: 120%;
+    font-size: 175%;
     transition: .5s;
 }
 
-.introduccion{
-    position: static;
-}
 .image {
     width: 30%;
-    border-radius: 7px;
+    border-radius: 11px;
     cursor: pointer;
 }
 
@@ -63,19 +61,46 @@ body {
     top: 50%;
     left: 8%;
     width: 1130px;
-    max-width: 95%;
     margin: 0 auto;
-
+    justify-content: space-around;
 }
+
+.on_image{
+    font-size: 125%;
+    padding: 15px;
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 .under_image{
-    width: 1130px;
-    max-width: 95%;
+    font-size: 170%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.under_image p {
-    max-width: 75%
+h6{
+    padding: 25px 32px;
+    background: #EDD83D;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 50%;
+}
+
+.under_image i{
+    font-size: 200%;
+}
+
+.about{
+    font-weight: bold;
+    max-width: 90%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F1E16A ;
+    border-radius: 15px;
+    padding: 10px;
 }
