@@ -9,63 +9,16 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#EDD83D,#EAF5CC)
+    background: linear-gradient(#030C12,#3C9DE2)
 }
 
 .navbar{
-    background-color: #7DC05D;
+    background-color: #051723;
     color: #04003D;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-}
-.navbar h3 span{
-    color: #ECD632;
-    font-size: 150%;
-    -webkit-filter: brightness(95%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-.navbar h3 span:hover{
-    -webkit-filter: brightness(100%)
-}
-
-.header{
-    color: black;
-    font: Tahoma;
-    font-size: 150%;
-    margin: 1px;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    position: static;
-}
-.header:hover{
-    font-size: 175%;
-    transition: .5s;
-}
-
-.image {
-    width: 30%;
-    border-radius: 11px;
-    cursor: pointer;
-}
-
-.image:hover{
-    box-shadow:
-    1px 1px #373737,
-    2px 2px #373737,
-    3px 3px #373737,
-    4px 4px #373737,
-    5px 5px #373737,
-    6px 6px #373737;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    transition: .5s ease;
 }
 
 .navbar ul li{
@@ -77,11 +30,11 @@ body {
 }
 
 .navbar ul li a{
-    color: #04003D;
-    text-decoration: none;
+    color: white;
     font-weight: bold;
+    text-decoration: none;
     text-transform: capitalize;
-    -webkit-filter: brightness(50%);
+    -webkit-filter: brightness(100%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -89,40 +42,121 @@ body {
     transition: all 1s ease;
 }
 
-.navbar ul li a:hover{
+.sp:hover{
     transform: scale(1.2);
-    background-color: #EFDE57;
-    color: #04003D;
+    background-color: #1ED760;
+    color: #000000;
     transition: .4s;
-    -webkit-filter: brightness(100%);
+    -webkit-filter: brightness(110%);
     font-weight: bold;
-    padding: 5px;
+    padding: 7px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 1px #1ED760)
+}
+
+.ig:hover{
+    text-shadow: 1px 1px 1px #030C12;
+    transform: scale(1.2);
+    background: radial-gradient(circle farthest-corner at 35% 90%, #ffc155, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #ffba43, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #444bce, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #3e45d1, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #7f25c4, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #7f29c2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d81d6e, transparent), linear-gradient(#4739c7, #be1e8c 30%, #e0264b 50%, #ee6a2c 70%, #ffb949 100%);
+    color: #white;
+    transition: .4s;
+    -webkit-filter: brightness(110%);
+    font-weight: bold;
+    padding: 7px;
     border-radius: 20px;
 }
 
-.introduccion{
+.tk:hover{
+    transform: scale(1.2);
+    background-color: black;
+    transition: .4s;
+    -webkit-filter: brightness(110%);
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px #FD3E3E) 
+            drop-shadow(-2px -2px .5px #4DE8F4);
+}
+
+.navbar h3 span{
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+
+}
+
+.content{
+    padding: 63px 40px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
     position: static;
-    top: 50%;
-    left: 8%;
     width: 1130px;
     margin: 0 auto;
-    justify-content: space-around;
-}
-
-.on_image{
-    font-size: 125%;
-    padding: 15px;
-    max-width: 75%;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-.under_image{
-    font-size: 170%;
-    margin: 0 auto;
-    display: flex;
+    justify-content: stretch;
     align-items: center;
-    justify-content: space-around;
+}
+
+.content h1{
+    color: beige;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font: Tahoma;
+    font-size: 300%;
+    width: 100%;
+    position: static;
+    text-align: left;
+}
+.content h1:hover{
+    font-size: 320%;
+    text-shadow: 0 0 20px black, 0 0 50px black;
+    transition: .9s;
+    .span: color
+}
+
+.content .baa:hover{
+
+    color: #FF1616;
+    text-shadow: 0 0 20px black, 0 0 50px black;
+    transition: .9s;
+}
+
+.content .ba:hover{
+
+    color: #5418CB;
+    text-shadow: 0 0 20px black, 0 0 50px black;
+    transition: .9s;
+}
+
+.content h4{
+    color: white;
+    max-width: 80%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.front{
+
+    padding-left: -200px;
+}
+
+.image {
+    width: 33%;
+    border-radius: 11px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.image:hover{
+    box-shadow:
+    2px 2px #373737,
+    3px 3px #373737,
+    4px 4px #373737,
+    5px 5px #373737,
+    6px 6px #373737,
+    7px 7px #373737;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
 }
 
 h6{
@@ -133,18 +167,3 @@ h6{
     max-width: 50%;
 }
 
-.under_image i{
-    font-size: 250%;
-}
-
-.about{
-    font-weight: bold;
-    max-width: 90%;
-    margin: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #F1E16A ;
-    border-radius: 15px;
-    padding: 10px;
-}
