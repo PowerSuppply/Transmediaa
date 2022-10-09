@@ -58,13 +58,15 @@ body {
     text-shadow: 1px 1px 1px #030C12;
     transform: scale(1.2);
     background: radial-gradient(circle farthest-corner at 35% 90%, #ffc155, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #ffba43, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #444bce, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #3e45d1, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #7f25c4, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #7f29c2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d81d6e, transparent), linear-gradient(#4739c7, #be1e8c 30%, #e0264b 50%, #ee6a2c 70%, #ffb949 100%);
-    color: #white;
+    color: white;
     transition: .4s;
     -webkit-filter: brightness(110%);
     font-weight: bold;
     padding: 7px;
     border-radius: 20px;
-}
+    filter: drop-shadow(1px 2px 1px #ffb949)
+            drop-shadow(2px 2px 2px #e0264b);
+}   
 
 .tk:hover{
     transform: scale(1.2);
@@ -78,11 +80,19 @@ body {
             drop-shadow(-2px -2px .5px #4DE8F4);
 }
 
-.navbar h3 span{
+.navbar h3{
     color: white;
+}
+.navbar h3 span{
+    color: #FDBA30;
     font-size: 150%;
     font-weight: bold;
+}
 
+.navbar h3 span:hover{
+    text-shadow: 0 0 20px #fdb9303b, 0 0 30px #fdb9303b;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .content{
@@ -105,24 +115,24 @@ body {
     width: 100%;
     position: static;
     text-align: left;
+    filter: drop-shadow(1px 1px 1px rgba(19, 23, 82, 0.37))
 }
 .content h1:hover{
     font-size: 320%;
     text-shadow: 0 0 20px black, 0 0 50px black;
     transition: .9s;
-    .span: color
 }
 
 .content .baa:hover{
 
-    color: #FF1616;
+    color: #ff4242;
     text-shadow: 0 0 20px black, 0 0 50px black;
     transition: .9s;
 }
 
 .content .ba:hover{
 
-    color: #5418CB;
+    color: #7834ff;
     text-shadow: 0 0 20px black, 0 0 50px black;
     transition: .9s;
 }
@@ -132,6 +142,7 @@ body {
     max-width: 80%;
     text-align: left;
     margin-top: 20px;
+    filter: drop-shadow(10px 10px 10px rgba(10, 12, 44, 0.37))
 }
 
 .front{
@@ -147,6 +158,10 @@ body {
 }
 
 .image:hover{
+    /* border-radius: 13;
+    background: rgba (255, 255, 255, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px); */
     box-shadow:
     2px 2px #373737,
     3px 3px #373737,
@@ -154,16 +169,38 @@ body {
     5px 5px #373737,
     6px 6px #373737,
     7px 7px #373737;
-    -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
     transition: .5s ease;
 }
 
-h6{
-    padding: 25px 25px;
-    background: #EDD83D;
-    border-radius: 15px;
-    overflow: hidden;
-    max-width: 50%;
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
 }
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 25px 25px;
+    background: #7CB6DE;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 13;
+    background: rgba (255, 255, 255, 0.37);
+    box-shadow: 8px 8px 15px 5px rgba(19, 23, 82, 0.37);
+    backdrop-filter: blur(20px);
+}
+.card i{
+    margin-top: 20px;
+    font-size: 50px;
+    filter: drop-shadow(1px 1px 1px rgba(19, 23, 82, 0.37))
 
+}
+.card h5{
+    margin-top: 20px;
+    line-height: 20px;
+}
