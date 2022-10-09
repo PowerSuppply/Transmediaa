@@ -89,12 +89,6 @@ body {
     font-weight: bold;
 }
 
-.navbar h3 span:hover{
-    text-shadow: 0 0 20px #fdb9303b, 0 0 30px #fdb9303b;
-    transition: .5s;
-    cursor: pointer;
-}
-
 .content{
     padding: 63px 40px;
     display: flex;
@@ -142,7 +136,7 @@ body {
     max-width: 80%;
     text-align: left;
     margin-top: 20px;
-    filter: drop-shadow(10px 10px 10px rgba(10, 12, 44, 0.37))
+    filter: drop-shadow(50px 50px 50px rgba(19, 23, 82, 0.37))
 }
 
 .front{
